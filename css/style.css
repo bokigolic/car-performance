@@ -9,7 +9,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #8ecdff, #9c27b0);
+  background: linear-gradient(to right, rgb(178, 118, 224), #8ecdff);
 }
 .logo{
   flex-basis: 20%;
@@ -48,7 +48,7 @@
   height: 1000px;
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: 0%;
 transform: translateY(-50%);
 }
 
@@ -59,8 +59,8 @@ transform: translateY(-50%);
   top: 0;
   left: 0%;
   border-radius: 50%;
-  background: #ccc;
- background-image: 
+  
+
 }
 
 .feature img{
@@ -69,11 +69,29 @@ transform: translateY(-50%);
 
 .feature{
   position: absolute;
+  display: flex;
+  color: #fff;
 }
+ .feature div{
+  margin-left: 30px;
+}
+.elantra{
+position: absolute;
+width: 400px;
+top: 50%;
+left:26%;
+transform: translateY(-50%);
+z-index: 1;
+}
+
+.feature div p{
+  margin: 8px;
+}
+
 
 .one{
   top: 450px;
-  right: 50px;
+  right: 0px;
 }
 
 .two{
@@ -83,10 +101,40 @@ transform: translateY(-50%);
 
 .three{
   bottom: 450px;
-  left: 50px;
+  left: 0px;
 }
 
 .four{
   bottom: 150px;
   right: 350px;
+}
+
+
+
+.controls {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+}
+
+.controls h3{
+  margin: 15px 0;
+  color: #fff;
+  
+
+
+}
+
+#upBtn{
+  width: 35px;
+  cursor: pointer;
+}
+
+#downBtn{
+  width: 35px;
+  cursor: pointer;
+  transform: rotate(180deg);
 }
